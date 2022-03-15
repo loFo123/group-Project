@@ -1,0 +1,16 @@
+todo
+10/03/2022 -  inverter ckt complete
+11/03-2022 -  battery charging circuit complete/buy
+12/03/2022 - iot set up complete
+13/03/2022 - app complete
+14/03/2022 - solar charging circuit 
+15/03/2022 - solar charging circuit complete
+16/03/2022 - hardware - battery,solar
+17/03/2022 - hardware - battery,solar
+18/03/2022 - hardware - construcion begin
+19/03/2022 - hardware -  construction cointinue
+20/03/2022 - hardware - construction continue
+21/03/2022 - hardware - construction end
+22/03/2022 - debugging
+23/03/2022 - debugging
+24/03/2022 - debugging 

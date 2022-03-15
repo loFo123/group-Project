@@ -1,0 +1,38 @@
+function D=Pand0(V, I)
+Dinit = 0.42;
+Dmax= 0.8;
+Dmin = 0.08;
+deltaD = 0.000005;
+
+persistent Vold Pold Dold;
+
+dataType= 'double';
+if isempty(Vold)
+    Vold=0;
+    Pold=0;
+    Dold=Dinit;
+end
+P=V*I;
+dV=V-Vold;
+dP=P-Pold;
+
+    if dP<0
+        if dV<0
+            D=Dold-deltaD;
+        else
+            D=Dold+deltaD;
+        end
+    else 
+        if dV<0
+            D=Dold+deltaD;
+        else 
+            D=Dold-deltaD;
+        end
+    end
+    if D>=Dmax | D<=Dmin
+        D=Dold; 
+    end
+    Dold=D;
+    Vold=V;
+    Pold=P;
+            
